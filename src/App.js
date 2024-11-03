@@ -36,6 +36,26 @@ function App() {
         {isOpen && (
           <div className="modal" onClick={closeHandler}>
             <form onSubmit={submitHandler}>
+              <div className="modal-content"><h2>Fill Details</h2>
+                <div className="input-group">
+                  <label htmlFor="username">Username: </label>
+                  <input type="text" name="username" id="username" />
+                </div>
+                <div className="input-group">
+                  <label htmlFor="email">Email Address:</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div className="input-group">
+                  <label htmlFor="phoneNo">Phone Number:</label>
+                  <input type="number" name="phoneNo" id="phone" required />
+                </div>
+                <div className="input-group">
+                  <label htmlFor="dob">Date of Birth:</label>
+                  <input type="date" name="dob" id="dob" />
+                </div>
+                <button type="submit" className="submit-button">
+                  Submit
+                </button></div>
               <h2>Fill Details</h2>
               <div className="input-group">
                 <label htmlFor="username">Username: </label>
